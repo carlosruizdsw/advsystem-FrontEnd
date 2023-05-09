@@ -8,6 +8,7 @@ import { HeaderModule } from './components/header/header.module';
 @NgModule({
   declarations: [
     AppComponent
+    
   ],
   imports: [
     BrowserModule,
