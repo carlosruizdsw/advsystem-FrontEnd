@@ -4,17 +4,21 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './components/header/header.module';
+import { HomeComponent } from './pages/home/home.component';
+import { FooterModule } from './components/footer/footer.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    HeaderModule
+    HeaderModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
