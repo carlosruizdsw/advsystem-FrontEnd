@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RequestsComponent } from './requests.component';
+import { DeviceInventoryComponent } from './device-inventory.component';
 
 const routes: Routes = [
   {
     path:'',
-    component: RequestsComponent
+    component: DeviceInventoryComponent
   }
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class RequestsRoutingModule { }
+export class DeviceInventoryRoutingModule { }

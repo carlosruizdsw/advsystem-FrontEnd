@@ -6,11 +6,33 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './components/header/header.module';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterModule } from './components/footer/footer.module';
+import { DeviceInventoryComponent } from './pages/device-inventory/device-inventory.component';
+import { EquipmentInventoryComponent } from './pages/equipment-inventory/equipment-inventory.component';
+import { GalleriesInventoryComponent } from './pages/galleries-inventory/galleries-inventory.component';
+import { ResponsibleInventoryComponent } from './pages/responsible-inventory/responsible-inventory.component';
+import { UserInventoryComponent } from './pages/user-inventory/user-inventory.component';
+import { UserRegistrationComponent } from './pages/user-registration/user-registration.component';
+import { ResponsibleRegistrationComponent } from './pages/responsible-registration/responsible-registration.component';
+import { GalleriesRegistrationComponent } from './pages/galleries-registration/galleries-registration.component';
+import { EquipmentRegistrationComponent } from './pages/equipment-registration/equipment-registration.component';
+import { DeviceRegistrationComponent } from './pages/device-registration/device-registration.component';
+import { RequestsComponent } from './pages/requests/requests.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    DeviceInventoryComponent,
+    EquipmentInventoryComponent,
+    GalleriesInventoryComponent,
+    ResponsibleInventoryComponent,
+    UserInventoryComponent,
+    UserRegistrationComponent,
+    ResponsibleRegistrationComponent,
+    GalleriesRegistrationComponent,
+    EquipmentRegistrationComponent,
+    DeviceRegistrationComponent,
+    RequestsComponent
     
   ],
   imports: [
