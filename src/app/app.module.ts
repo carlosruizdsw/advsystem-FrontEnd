@@ -17,7 +17,8 @@ import { GalleriesRegistrationComponent } from './pages/galleries-registration/g
 import { EquipmentRegistrationComponent } from './pages/equipment-registration/equipment-registration.component';
 import { DeviceRegistrationComponent } from './pages/device-registration/device-registration.component';
 import { RequestsComponent } from './pages/requests/requests.component';
-
+import { SupervisorRegistrationComponent } from './pages/supervisor-registration/supervisor-registration.component';
+import { SupervisorInventoryComponent } from './pages/supervisor-inventory/supervisor-inventory.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,9 @@ import { RequestsComponent } from './pages/requests/requests.component';
     GalleriesRegistrationComponent,
     EquipmentRegistrationComponent,
     DeviceRegistrationComponent,
-    RequestsComponent
+    RequestsComponent,
+    SupervisorRegistrationComponent,
+    SupervisorInventoryComponent
     
   ],
   imports: [
