@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RequestsRoutingModule } from './requests-routing.module';
+import { RequestsInventoryRoutingModule } from './requests-inventory-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    RequestsRoutingModule
+    RequestsInventoryRoutingModule
   ]
 })
-export class RequestsModule { }
+export class RequestsInventoryModule { }

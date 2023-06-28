@@ -51,6 +51,11 @@ const routes: Routes = [
     canActivate: [],
     loadChildren: () => import('./pages/user-inventory/user-inventory.module').then(m => m.UserInventoryModule)
   },
+  {
+    path: 'requests-inventory',
+    canActivate: [],
+    loadChildren: () => import('./pages/requests-inventory/requests-inventory.module').then(m => m.RequestsInventoryModule)
+  },
 
   //APARTADO MENÚ REGISTRO
   {
@@ -83,12 +88,10 @@ const routes: Routes = [
     canActivate: [],
     loadChildren: () => import('./pages/user-registration/user-registration.module').then(m => m.UserRegistrationModule)
   },
-
-  //APARTADO SEGUIMIENTO
   {
-    path: 'requests',
+    path: 'requests-registration',
     canActivate: [],
-    loadChildren: () => import('./pages/requests/requests.module').then(m => m.RequestsModule)
+    loadChildren: () => import('./pages/requests-registration/requests-registration.module').then(m => m.RequestsRegistrationModule)
   },
 ];
 

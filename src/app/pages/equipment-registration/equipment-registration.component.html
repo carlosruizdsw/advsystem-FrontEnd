@@ -1,74 +1,157 @@
 <app-header></app-header>
-<p>equipment-registration works!</p>
-
 
 <body>
-    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
-        <div class="wrapper wrapper--w680">
-            <div class="card card-1">
-                <div class="card-heading"></div>
-                <div class="card-body">
-                    <h2 class="title">Registro de equipos</h2>
-                    <form method="POST">
-                        <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="NAME" name="name">
-                        </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE" name="birthday">
-                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="gender">
-                                            <option disabled="disabled" selected="selected">GENDER</option>
-                                            <option>Male</option>
-                                            <option>Female</option>
-                                            <option>Other</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="class">
-                                    <option disabled="disabled" selected="selected">CLASS</option>
-                                    <option>Class 1</option>
-                                    <option>Class 2</option>
-                                    <option>Class 3</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <input class="input--style-1" type="text" placeholder="REGISTRATION CODE" name="res_code">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="p-t-20">
-                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
-                        </div>
-                    </form>
+  <button type="button" routerLink="/admin/list_experience" class="btn btn-secondary btn-block">
+    <span class=""></span> Regresar al menu
+  </button>
+  <div class="page-wrapper bg-dark p-t-100 p-b-50">
+    <div class="wrapper wrapper--w900">
+      <div class="card card-6">
+        <div class="card-heading">
+          <h2 class="title">Registro Equipos</h2>
+        </div>
+        <div class="card-body">
+          <form method="POST">
+            <div class="form-row">
+              <div class="name" for="inputEmpresa">Activo Fijo</div>
+              <div class="value">
+                <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="name" for="inputEmpresa">Equipo</div>
+              <div class="value">
+                <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="name" for="inputEmpresa">Número de serie</div>
+              <div class="value">
+                <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="name" for="inputEmpresa">Marca</div>
+              <div class="value">
+                <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="name" for="inputEmpresa">Modelo</div>
+              <div class="value">
+                <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">Año</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
                 </div>
             </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">Nombre del equipo</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">Usuario</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">Correo</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">Licencia Adobe</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">Apps</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">Antivirus</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">Procesador</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">RAM</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">Almacenamiento</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">GPU</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">Sistema Operativo</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputType">Galería o departamento</div>
+                <select name="value">
+                  <option disabled="disabled" selected="selected">Galería</option>
+                  <option>DISCO DURO 4TB ADATA</option>
+                  <option>DISCO DURO 4TB LACIE</option>
+                  <option>DISCO DURO 4TB WD ELEMENTS</option>
+                </select>
+              </div>
+            <div class="form-row">
+                <div class="name" for="inputEmpresa">Logmein</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputArea" formControlName="area">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="name" for="inputFecha">Fecha de actualización</div>
+                <div class="value">
+                  <input class="input--style-6" type="text" id="inputDate" formControlName="date">
+                </div>
+              </div>
+            <div class="form-row">
+                <div class="name" for="inputDescripcion">Comentarios</div>
+                <div class="value">
+                  <div class="input-group">
+                    <textarea class="textarea--style-6" id="inputDescripcion" formControlName="description"
+                      placeholder="Describe brevemente tus comentarios"></textarea>
+                  </div>
+                </div>
+              </div>
+          </form>
         </div>
+        <div class="card-footer">
+          <button class="btn btn--radius-2 btn--blue-2">Crear Experiencia</button>
+        </div>
+      </div>
     </div>
-
-    <!-- Jquery JS-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <script src="vendor/datepicker/moment.min.js"></script>
-    <script src="vendor/datepicker/daterangepicker.js"></script>
-
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
-
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+  </div>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="js/global.js"></script>
+</body>

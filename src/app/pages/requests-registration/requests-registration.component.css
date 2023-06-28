@@ -618,9 +618,16 @@
     color: #fff;
     margin-bottom: 24px;
   }
+
+  .title2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+  }
   
   @media (max-width: 767px) {
-    .title {
+    .title2 {
       padding: 0 15px;
     }
   }
