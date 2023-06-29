@@ -20,6 +20,9 @@ import { SupervisorRegistrationComponent } from './pages/supervisor-registration
 import { SupervisorInventoryComponent } from './pages/supervisor-inventory/supervisor-inventory.component';
 import { RequestsInventoryComponent } from './pages/requests-inventory/requests-inventory.component';
 import { RequestsRegistrationComponent } from './pages/requests-registration/requests-registration.component';
+import { DeviceInfoComponent } from './pages/device-info/device-info.component';
+import { EquipmentInfoComponent } from './pages/equipment-info/equipment-info.component';
+import { RequestsInfoComponent } from './pages/requests-info/requests-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +40,10 @@ import { RequestsRegistrationComponent } from './pages/requests-registration/req
     SupervisorRegistrationComponent,
     SupervisorInventoryComponent,
     RequestsInventoryComponent,
-    RequestsRegistrationComponent
+    RequestsRegistrationComponent,
+    DeviceInfoComponent,
+    EquipmentInfoComponent,
+    RequestsInfoComponent
     
   ],
   imports: [

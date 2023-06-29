@@ -611,12 +611,21 @@
   /* ==========================================================================
      #TITLE
      ========================================================================== */
-  .title {
-    font-size: 36px;
-    font-weight: 700;
+     .title {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+
+  .title3 {
+    font-size: 18px;
+    font-weight: 50;
     text-align: left;
-    color: #fff;
-    margin-bottom: 24px;
+    color: #000;
+    margin-bottom: -10px;
   }
   
   @media (max-width: 767px) {
@@ -793,3 +802,10 @@ select[name="value"]:focus {
   border-color: #4CAF50;
   box-shadow: 0 0 5px #4CAF50;
 }
+
+.title2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+  }

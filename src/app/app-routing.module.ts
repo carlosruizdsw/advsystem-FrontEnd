@@ -93,6 +93,23 @@ const routes: Routes = [
     canActivate: [],
     loadChildren: () => import('./pages/requests-registration/requests-registration.module').then(m => m.RequestsRegistrationModule)
   },
+
+  //APARTADO MENÚ INFO
+  {
+    path: 'device-info',
+    canActivate: [],
+    loadChildren: () => import('./pages/device-info/device-info.module').then(m => m.DeviceInfoModule)
+  },
+  {
+    path: 'equipment-info',
+    canActivate: [],
+    loadChildren: () => import('./pages/equipment-info/equipment-info.module').then(m => m.EquipmentInfoModule)
+  },
+  {
+    path: 'requests-info',
+    canActivate: [],
+    loadChildren: () => import('./pages/requests-info/requests-info.module').then(m => m.RequestsInfoModule)
+  },
 ];
 
 @NgModule({
