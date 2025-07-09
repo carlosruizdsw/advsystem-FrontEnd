@@ -12,31 +12,29 @@
           <p>.</p>
           <p>´</p>
 
-          <p class="title">Inventario Equipos</p>
+          <p class="title">Inventario Modelos</p>
         </div>
         <div class="table-responsive custom-table-responsive">
           <table class="table custom-table">
             <thead>
               <tr>
-                <th scope="col"> Activo Fijo </th>
-                <th scope="col"> Equipo </th>
-                <th scope="col"> Galería </th>
-                <th scope="col"> Ultima Actualización </th>
+                <th scope="col"> ID </th>
+                <th scope="col"> Marca </th>
+                <th scope="col"> Modelo</th>
                 <th scope="col"> Acción </th>
               </tr>
             </thead>
   
             <tbody>
-              <tr>
-                <td>{{"1188"}} <br></td>
-                <td>{{"IMAC 21.5"}} <br></td>
-                <td>{{"SISTEMAS"}} <br></td>
-                <td>{{"01/06/2023"}} <br></td>  
-                <td>
-                  <button class="btn btn-dark col-md-8">Consultar Información </button>
-                </td>
-              </tr>
-            </tbody>
+            <tr *ngFor="let equipo of equipos; index as i">
+              <td>{{ equipo.id }}</td>
+              <td>{{ equipo.nMarca }}</td>
+              <td>{{ equipo.nModelo }}</td>
+              <td>
+                <button class="btn btn-dark col-md-8">Consultar Información</button>
+              </td>
+            </tr>
+          </tbody>
           </table>
         </div>
       </div>

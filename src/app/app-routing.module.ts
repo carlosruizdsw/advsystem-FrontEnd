@@ -37,16 +37,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/galleries-inventory/galleries-inventory.module').then(m => m.GalleriesInventoryModule)
   },
   {
-    path: 'responsible-inventory',
-    canActivate: [],
-    loadChildren: () => import('./pages/responsible-inventory/responsible-inventory.module').then(m => m.ResponsibleInventoryModule)
-  },
-  {
-    path: 'supervisor-inventory',
-    canActivate: [],
-    loadChildren: () => import('./pages/supervisor-inventory/supervisor-inventory.module').then(m => m.SupervisorInventoryModule)
-  },
-  {
     path: 'user-inventory',
     canActivate: [],
     loadChildren: () => import('./pages/user-inventory/user-inventory.module').then(m => m.UserInventoryModule)
@@ -72,16 +62,6 @@ const routes: Routes = [
     path: 'galleries-registration',
     canActivate: [],
     loadChildren: () => import('./pages/galleries-registration/galleries-registration.module').then(m => m.GalleriesRegistrationModule)
-  },
-  {
-    path: 'responsible-registration',
-    canActivate: [],
-    loadChildren: () => import('./pages/responsible-registration/responsible-registration.module').then(m => m.ResponsibleRegistrationModule)
-  },
-  {
-    path: 'supervisor-registration',
-    canActivate: [],
-    loadChildren: () => import('./pages/supervisor-registration/supervisor-registration.module').then(m => m.SupervisorRegistrationModule)
   },
   {
     path: 'user-registration',

@@ -9,20 +9,18 @@ import { FooterModule } from './components/footer/footer.module';
 import { DeviceInventoryComponent } from './pages/device-inventory/device-inventory.component';
 import { EquipmentInventoryComponent } from './pages/equipment-inventory/equipment-inventory.component';
 import { GalleriesInventoryComponent } from './pages/galleries-inventory/galleries-inventory.component';
-import { ResponsibleInventoryComponent } from './pages/responsible-inventory/responsible-inventory.component';
 import { UserInventoryComponent } from './pages/user-inventory/user-inventory.component';
 import { UserRegistrationComponent } from './pages/user-registration/user-registration.component';
-import { ResponsibleRegistrationComponent } from './pages/responsible-registration/responsible-registration.component';
 import { GalleriesRegistrationComponent } from './pages/galleries-registration/galleries-registration.component';
 import { EquipmentRegistrationComponent } from './pages/equipment-registration/equipment-registration.component';
 import { DeviceRegistrationComponent } from './pages/device-registration/device-registration.component';
-import { SupervisorRegistrationComponent } from './pages/supervisor-registration/supervisor-registration.component';
-import { SupervisorInventoryComponent } from './pages/supervisor-inventory/supervisor-inventory.component';
 import { RequestsInventoryComponent } from './pages/requests-inventory/requests-inventory.component';
 import { RequestsRegistrationComponent } from './pages/requests-registration/requests-registration.component';
 import { DeviceInfoComponent } from './pages/device-info/device-info.component';
 import { EquipmentInfoComponent } from './pages/equipment-info/equipment-info.component';
 import { RequestsInfoComponent } from './pages/requests-info/requests-info.component';
+
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,15 +28,11 @@ import { RequestsInfoComponent } from './pages/requests-info/requests-info.compo
     DeviceInventoryComponent,
     EquipmentInventoryComponent,
     GalleriesInventoryComponent,
-    ResponsibleInventoryComponent,
     UserInventoryComponent,
     UserRegistrationComponent,
-    ResponsibleRegistrationComponent,
     GalleriesRegistrationComponent,
     EquipmentRegistrationComponent,
     DeviceRegistrationComponent,
-    SupervisorRegistrationComponent,
-    SupervisorInventoryComponent,
     RequestsInventoryComponent,
     RequestsRegistrationComponent,
     DeviceInfoComponent,
@@ -51,7 +45,8 @@ import { RequestsInfoComponent } from './pages/requests-info/requests-info.compo
     AppRoutingModule,
     CommonModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
